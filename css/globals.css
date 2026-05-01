@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "cardify";
+    src: url("/font/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+    /* font-style: normal; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cardify", "sans-serif";
+    text-decoration: none;
+}
+
+:root {
+    --gap-xs: 2rem;
+    --gap-s: 4rem;
+    --gap-m: 8rem;
+    --gap-l: 16rem;
+    --gap-xl: 32rem;
+
+    --gap-x-xs: 2rem;
+    --gap-x-s: 4rem;
+    --gap-x-m: 8rem;
+    --gap-x-l: 16rem;
+    --gap-x-xl: 32rem;
+
+
+    --bg-accent: #19CC3F;
+    --bg-primary: #F2F8F3;
+    --bg-secondary: #F2F8F3;
+    --bg-tag: #CAFFDC;
+    --bg-btn-primary: #122231;
+
+
+    --stroke-primary: #EAEAEA;
+    --stroke-accent: #9DDDB6;
+
+
+    --text-primary: #000000;
+    --text-accent: #0FB259;
+    --text-white: #fff;
+    --sub-text-primary: #3E4245;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.tag-text {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    color: var(--text-accent);
+    background-color: var(--bg-tag);
+    border-radius: 2rem;
+    width: max-content;
+    font-weight: bolder;
+    margin-bottom: 1.1rem;
+}

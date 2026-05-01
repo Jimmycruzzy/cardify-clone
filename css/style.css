@@ -1,0 +1,198 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Inter, Arial, sans-serif; */
+}
+
+
+/* Body background (very important) */
+body {
+  /* display: flex; */
+  /* justify-content: center; */
+  background: #F2F8F3; /* light grey/purple tint like Cardify */
+}
+
+/* Header */
+.header {
+  width: 100%;
+  padding: 16px 0;
+  /* background: #ffffff; */
+  /* border-bottom: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: absolute; */
+}
+
+/* Logo */
+.logo img {
+  width: 150px;
+}
+
+/* Nav */
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.nav a:hover {
+  color: #111827; /* darker on hover */
+}
+
+/* CTA */
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* background-color: red; */
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none ;
+}
+
+.btn1 {
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    color: #111827;
+}
+
+.btn2 {
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #111827;
+    font-weight: 500;
+}
+
+/* HERO-SECTION  */
+
+/* Hero Section */
+.hero {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Layout */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Text */
+.hero-text {
+    max-width: 350px;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  background: #ede9fe;
+  color: #7c3aed;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Heading */
+.hero-text h1 {
+  font-size: 50px;
+  font-weight: 550;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+    color: #22c55e;
+}
+
+/* Paragraph */
+.hero-text p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.6;
+  color: black;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.hero-buttons img {
+    height: 45px;
+    width: auto;
+    cursor: pointer;
+
+}
+
+.store-btn {
+    display: inline-block;
+    /* border-radius: 8px; */
+    /* overflow: hidden; */
+}
+
+.store-btn {
+    border-radius: 12px;
+    overflow: hidden;
+}
+/* Primary button
+.btn.primary {
+  background: #7c3aed;
+  color: #fff;
+} */
+
+/* .btn.primary:hover {
+  background: #6d28d9;
+} */
+
+/* Secondary button */
+
+
+/* .btn.secondary:hover {
+  background: #e5e7eb;
+} */
+
+/* Image */
+.hero-image {
+    /* border: 4px solid ; */
+    flex: 1;
+    text-align: right;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.tribe-section {
+  padding: 100px 20px;
+  background: #f6f7f9;
+  text-align: center;
+}
