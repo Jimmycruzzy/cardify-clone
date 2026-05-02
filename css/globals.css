@@ -66,3 +66,44 @@ body {
     font-weight: bolder;
     margin-bottom: 1.1rem;
 }
+
+p {
+    color: var(--text-primary);
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --gap-x-xs: 1rem;
+        --gap-x-s: 2rem;
+        --gap-x-m: 4rem;
+        --gap-x-l: 8rem;
+        --gap-x-xl: 16rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    :root {
+        --gap-x-xs: 0.5rem;
+        --gap-x-s: 1rem;
+        --gap-x-m: 2rem;
+        --gap-x-l: 4rem;
+        --gap-x-xl: 8rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 10px;
+    }
+    :root {
+        --gap-x-xs: 0.25rem;
+        --gap-x-s: 0.5rem;
+        --gap-x-m: 1rem;
+        --gap-x-l: 2rem;
+        --gap-x-xl: 4rem;
+    }
+}

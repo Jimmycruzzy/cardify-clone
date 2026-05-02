@@ -11,10 +11,6 @@
     color: var(--sub-text-primary);
 }
 
-header.header {
-    padding: calc(var(--gap-s) * 0.4) var(--gap-s);
-}
-
 .tribe-section,
 .solution-section,
 .community-section 

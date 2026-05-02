@@ -1,0 +1,110 @@
+section.contact .contact-hero {
+    width: 100%;
+    padding: calc(var(--gap-s) * 1) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(var(--gap-m) * 0.9);
+}
+
+section.contact .contact-hero-underlay {
+    position: absolute;
+    width: 100%;
+}
+
+section.contact .grid-float {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    display: block;
+}
+
+section.contact .grid-float:nth-child(1) {
+    width: 5rem;
+    height: 5rem;
+    top: -3rem;
+    right: 33%;
+}
+
+section.contact .grid-float:nth-child(2) {
+    top: -2.5rem;
+    right: 15%;
+}
+
+section.contact .grid-float:nth-child(3) {
+    top: 0;
+    right: 37%;
+}
+
+section.contact .grid-float:nth-child(4) {
+    top: 3rem;
+    right: 32%;
+}
+
+section.contact .contact-hero .tag-text {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+section.contact .contact-hero>p {
+    font-size: 2.6rem;
+    font-weight: 700;
+    width: clamp(8rem, 58%, 60rem);
+    text-align: center;
+}
+
+section.contact .contact-hero>p span {
+    color: #0FB259;
+    font-weight: 700;
+}
+
+section.contact .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--gap-s) * 0.8);
+    margin: calc(var(--gap-s) * 0.2) 0;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+section.contact .contact-links>div {
+    width: clamp(10rem, 32%, 95vw);
+
+}
+
+section.contact .contact-links p {
+    font-size: 1.4rem;
+    letter-spacing: -.8px;
+}
+
+section.contact .contact-links strong {
+    display: block;
+    letter-spacing: -.8px;
+    font-size: 2rem;
+    margin-bottom: calc(var(--gap-s) * 0.2);
+}
+
+section.contact .contact-links a{
+    display: block;
+    width: max-content;
+    padding: calc(var(--gap-s) * 0.25)  calc(var(--gap-s) * 0.3);
+    border-radius: 0.9rem;
+    font-size: 0.9rem;
+}
+
+section.contact .contact-links .link-number a {
+    background-color: var(--text-primary);
+    color: var(--text-white);
+    font-weight: 400;
+}
+
+section.contact .contact-links .link-email a {
+    background-color: var(--text-accent);
+    color: var(--text-white);
+    font-weight: 400;
+}
+
+
+section.contact .contact-links .tag-text {
+    background-color: #61ed8920;
+    margin-bottom: calc(var(--gap-s) * 0.6);
+}
