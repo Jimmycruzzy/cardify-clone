@@ -28,7 +28,7 @@ body {
 
 
 header.header {
-  padding: calc(var(--gap-x-s) * 0.4) var(--gap-x-s);
+  padding: calc(var(--gap-s) * 0.4) var(--gap-x-s);
   /* display: none !important; */
 }
 
@@ -336,7 +336,16 @@ section.our-mission .our-mission-second .grid-float:nth-child(4) {
     background-image: url(/images/about/imgi_21_image-7.png);
 }
 
+@media screen and (max-width: 950px) {
+
+.cta.d-flex.gap-2 {
+  justify-content: center;
+  margin-top: 2rem;
+}
+}
+
 @media screen and (max-width: 900px) {
+
 
 .hero-buttons {
   justify-content: center;

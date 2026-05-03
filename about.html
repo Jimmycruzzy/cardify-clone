@@ -9,34 +9,48 @@
     <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/about.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./images/logo-icon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-        <header class="header">
+<header class="header navbar navbar-expand-lg">
+    <div class="container">
 
-            <!-- Logo -->
-            <div class="logo">
-                <img src="./image/imgi_1_CardifyLogo.png" alt="logo">
-            </div>
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="#">
+            <img src="./image/imgi_1_CardifyLogo.png" alt="logo" class="img-fluid">
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation + CTA Wrapper -->
+        <div class="collapse navbar-collapse justify-content-between" id="mainNav">
 
             <!-- Navigation -->
             <nav class="nav">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="./faq.html">FAQs</a></li>
-                    <li><a href="#">Resources</a></li>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Company</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./faq.html">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
                 </ul>
             </nav>
 
-            <!-- CTA Button -->
-            <div class="cta">
+            <!-- CTA -->
+            <div class="cta d-flex gap-2">
                 <a href="#" class="btn1">Sign in</a>
                 <a href="#" class="btn2">Create free account</a>
             </div>
-        </header>
+
+        </div>
+    </div>
+</header>
 
     <section class="our-mission flex-x">
         <div class="our-mission-first">
