@@ -13,6 +13,7 @@ section.faq .faq-head {
     flex-direction: column;
     align-items: center;
     width: max-content;
+    max-width: 100%;
     margin: 0 auto;
     gap: calc(var(--gap-s) * 0.25);
 }
@@ -45,8 +46,9 @@ section.faq .faq-body {
     width: 100%;
     display: flex; 
     justify-content: center;
-    gap: calc(var(--gap-s) * 0.6);
-    padding: calc(var(--gap-s) * 0.6) calc(var(--gap-x-m) * 1.36);
+    align-items: center;
+    gap: calc(var(--gap-x-s) * 0.6);
+    padding: calc(var(--gap-s) * 0.6);
     flex-wrap: wrap;
 }
 
@@ -89,6 +91,7 @@ section.faq .faq-body .faq-tabs li.active {
 section.faq .faq-body .faq-accordion-container {
     overflow: hidden;
     flex: 1;
+    max-width: 34rem;
 }
 
 
@@ -152,7 +155,7 @@ section.faq .faq-body .faq-accordion-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: calc(var(--gap-s) * 0.2) calc(var(--gap-s-s) * 0.2);
+    padding: calc(var(--gap-s) * 0.2) calc(var(--gap-x-s) * 0.2);
 }
 
 .accordion-item label .label-inner {
@@ -163,6 +166,7 @@ section.faq .faq-body .faq-accordion-container {
     stroke-width: 1px;
     font-size: 1.2rem;
     color: var(--sub-text-primary);
+    padding-right: calc(var(--gap-s) * 0.6);
 }
 
 .accordion-item label .label-inner i {
@@ -190,3 +194,32 @@ section.faq .faq-body .faq-accordion-container {
     font-style: italic;
 }
 
+
+@media screen and (max-width: 900px) {
+
+section.faq .faq-body .faq-tabs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    height: max-content;
+}
+
+section.faq .faq-body .faq-tabs li {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--gap-x-s) * 0.2) calc(var(--gap-x-s) * 0.4);
+    text-align: center;
+}
+
+section.faq .faq-head h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.faq-accordion {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+}

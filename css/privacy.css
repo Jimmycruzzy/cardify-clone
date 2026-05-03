@@ -13,7 +13,7 @@
     flex-direction: column;
     gap: calc(var(--gap-s) * 0.42);
     color: var(--text-white);
-    padding: calc(var(--gap-s) * 0.8) calc(var(--gap-s) * 0.6);
+    padding: calc(var(--gap-s) * 0.8) calc(var(--gap-x-s) * 0.6);
 }
 
 .risk-warning-card h2 {

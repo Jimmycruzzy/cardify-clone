@@ -16,7 +16,7 @@
 .community-section 
  {
     padding: unset;
-    padding: calc(var(--gap-m) * 0.4);
+    padding: calc(var(--gap-m) * 0.4)  calc(var(--gap-x-m) * 0.4);
     padding-top: var(--gap-m);
     background-color: var(--bg-primary);
     overflow: hidden;
@@ -370,3 +370,16 @@
     }
 }
 
+
+@media screen and (max-width: 900px) {
+
+    .solution-card-wrapper {
+        grid-template-columns: repeat(1, 100%);
+        width: 95vw;
+        /* grid-gap: unset; */
+    }
+
+    .solution-card {
+        height: 20rem;
+    }
+}

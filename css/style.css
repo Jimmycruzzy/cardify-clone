@@ -29,6 +29,7 @@ body {
 
 header.header {
   padding: calc(var(--gap-x-s) * 0.4) var(--gap-x-s);
+  /* display: none !important; */
 }
 
 /* Logo */
@@ -124,7 +125,7 @@ header.header {
 
 /* Heading */
 .hero-text h1 {
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 550;
   line-height: 1.1;
   letter-spacing: -1.5px;
@@ -132,8 +133,7 @@ header.header {
   margin-bottom: 20px;
 }
 
-.hero-text h1 span {
-    color: #22c55e;
+.hero-text h1 span { color: #22c55e;
 }
 
 /* Paragraph */
@@ -152,7 +152,7 @@ header.header {
 }
 
 .hero-buttons img {
-    height: 45px;
+    height: 3.2rem;
     width: auto;
     cursor: pointer;
 
@@ -207,7 +207,7 @@ header.header {
 
 section.short-story,
 section.our-mission {
-    padding: var(--gap-s) calc(var(--gap-l) * 0.75);
+    padding: var(--gap-s) calc(var(--gap-x-l) * 0.75);
     display: flex;
     justify-content: center;
     gap: var(--gap-m);
@@ -334,4 +334,26 @@ section.our-mission .our-mission-second .grid-float:nth-child(4) {
 .our-mission-second .our-mission-image-grid .image-7 {
     grid-area: g;
     background-image: url(/images/about/imgi_21_image-7.png);
+}
+
+@media screen and (max-width: 900px) {
+
+.hero-buttons {
+  justify-content: center;
+}
+
+
+  section {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+.hero-container { 
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+}
 }
